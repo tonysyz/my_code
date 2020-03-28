@@ -151,7 +151,7 @@ def start():
 if __name__ == "__main__":
     while True:
         pay = input("是否为付费？\n1.Yes\n2.No\n请选择：")
-        if pay == "1":
-            start()
         if pay == "2":
+            start()
+        if pay == "1":
             print("Buy it yourself!")

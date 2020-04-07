@@ -44,19 +44,19 @@ Hope you enjoy this program.
 
     def get_list(self, text, m3u8):
         video_list = []
-        if 'aliliving-pre.alicdn.com/live_hp/' in m3u8:
+        if 'aliliving-pre.alicdn.com/live_hp' in m3u8:
             url = 'https://aliliving-pre.alicdn.com/live_hp/' # https://aliliving-pre.alicdn.com/live_hp/9421d502-810a-4ed8-bbcc-2326f1291dbc.m3u8
-        elif 'dtliving-pre.alicdn.com/live_hp/' in m3u8:
+        elif 'dtliving-pre.alicdn.com/live_hp' in m3u8:
             url = 'https://dtliving-pre.alicdn.com/live_hp/'
         elif 'dtliving-pre.alicdn.com/live/' in m3u8:
             url = 'https://dtliving-pre.alicdn.com/live/'
-        if 'aliliving-pre.alicdn.com/live/' in m3u8:
+        elif 'aliliving-pre.alicdn.com/live/' in m3u8:
             url = 'https://aliliving-pre.alicdn.com/live/'
         else:
             url = m3u8.split("?")[0].split('-')[0][:-8]
         for each in text:
             if '.ts' in each:
-                video_list.append(url + each)
+                video_list.append(url+each)
         return video_list
 
     def get_name(self):

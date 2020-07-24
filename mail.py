@@ -11,9 +11,9 @@ from tqdm import tqdm
 
 def send_file(path):
 
-    msg_from = 'tony_syz@163.com'
-    passward = 'FSWXIOHOKLKUVVEE'
-    msg_to = 'xfy202123@163.com'
+    msg_from = 'wwwwww@163.com'
+    passward = 'wwwwwww'
+    msg_to = 'wwwwwwwwww@163.com'
 
     t = time.localtime()
     subject = '{}-{}-{}_{}:{}:{} Files'.format(t.tm_year, t.tm_mon, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec)
